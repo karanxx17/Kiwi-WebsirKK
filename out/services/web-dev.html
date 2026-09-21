@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&amp;q=85"/><link rel="stylesheet" href="/_next/static/css/972f5e34044b0aed.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-24f761952a12252f.js"/><script src="/_next/static/chunks/fd9d1056-87da80e0c187477b.js" async=""></script><script src="/_next/static/chunks/117-54ab7854be5ada76.js" async=""></script><script src="/_next/static/chunks/main-app-c12b1ad7f09d1334.js" async=""></script><script src="/_next/static/chunks/972-8c737d6cac936def.js" async=""></script><script src="/_next/static/chunks/app/services/%5Bid%5D/page-7e07f8b51751a086.js" async=""></script><script src="/_next/static/chunks/app/layout-75e061c9d400ec8d.js" async=""></script><title>Kiwi Connect Digital | Digital Marketing Agency, Bhopal</title><meta name="description" content="Kiwi Connect Digital - Premier digital marketing agency in Bhopal."/><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_a24c97 noise"><style>
+        @import url(&#x27;https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&amp;family=DM+Sans:wght@400;500;600;700;800&amp;display=swap&#x27;);
+
+        .kiwi-loader {
+          position: fixed; inset: 0; z-index: 9999;
+          background: #0a0a0a;
+          display: flex; flex-direction: column;
+          align-items: center; justify-content: center;
+          transition: opacity 0.5s ease, transform 0.5s ease;
+          overflow: hidden;
+        }
+        .kiwi-loader--out {
+          opacity: 0;
+          transform: scale(1.03);
+          pointer-events: none;
+        }
+
+        /* ── BG particles ── */
+        .loader-particles {
+          position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+        }
+        .lp {
+          position: absolute; border-radius: 50%;
+          animation: lpFloat linear infinite;
+          opacity: 0;
+        }
+        .lp:nth-child(1)  { width:6px;  height:6px;  background:#ff6ce7; left:12%;  animation-duration:4.2s; animation-delay:0.2s; }
+        .lp:nth-child(2)  { width:4px;  height:4px;  background:#ba3aff; left:25%;  animation-duration:3.8s; animation-delay:0.8s; }
+        .lp:nth-child(3)  { width:8px;  height:8px;  background:#f97316; left:38%;  animation-duration:5.1s; animation-delay:0.4s; }
+        .lp:nth-child(4)  { width:5px;  height:5px;  background:#fbbf24; left:55%;  animation-duration:4.5s; animation-delay:1.1s; }
+        .lp:nth-child(5)  { width:6px;  height:6px;  background:#ff6ce7; left:68%;  animation-duration:3.6s; animation-delay:0.6s; }
+        .lp:nth-child(6)  { width:4px;  height:4px;  background:#ba3aff; left:80%;  animation-duration:4.9s; animation-delay:0.1s; }
+        .lp:nth-child(7)  { width:7px;  height:7px;  background:#f97316; left:90%;  animation-duration:4.0s; animation-delay:1.4s; }
+        .lp:nth-child(8)  { width:5px;  height:5px;  background:#fbbf24; left:5%;   animation-duration:5.3s; animation-delay:0.9s; }
+        @keyframes lpFloat {
+          0%   { transform: translateY(100vh) scale(0.5); opacity: 0; }
+          10%  { opacity: 0.7; }
+          90%  { opacity: 0.4; }
+          100% { transform: translateY(-80px) scale(1); opacity: 0; }
+        }
+
+        /* ── Center stage ── */
+        .loader-stage {
+          position: relative;
+          display: flex; flex-direction: column;
+          align-items: center; gap: 40px;
+          z-index: 2;
+        }
+
+        /* ── Petal ring ── */
+        .petal-ring {
+          position: relative; width: 140px; height: 140px;
+        }
+        .petal {
+          position: absolute;
+          width: 30px; height: 58px;
+          border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+          transform-origin: 50% 100%;
+          top: 50%; left: 50%;
+          margin-left: -15px; margin-top: -58px;
+          animation: petalPop 1.8s cubic-bezier(.22,.68,0,1.2) infinite;
+        }
+        .petal:nth-child(1)  { background:#7c3aed; --r:0deg;   animation-delay:0s;    }
+        .petal:nth-child(2)  { background:#8b37e8; --r:36deg;  animation-delay:0.09s; }
+        .petal:nth-child(3)  { background:#a855f7; --r:72deg;  animation-delay:0.18s; }
+        .petal:nth-child(4)  { background:#c026d3; --r:108deg; animation-delay:0.27s; }
+        .petal:nth-child(5)  { background:#db2777; --r:144deg; animation-delay:0.36s; }
+        .petal:nth-child(6)  { background:#f43f5e; --r:180deg; animation-delay:0.45s; }
+        .petal:nth-child(7)  { background:#fb7185; --r:216deg; animation-delay:0.54s; }
+        .petal:nth-child(8)  { background:#ff6ce7; --r:252deg; animation-delay:0.63s; }
+        .petal:nth-child(9)  { background:#f97316; --r:288deg; animation-delay:0.72s; }
+        .petal:nth-child(10) { background:#fbbf24; --r:324deg; animation-delay:0.81s; }
+        @keyframes petalPop {
+          0%   { opacity:0.12; transform:rotate(var(--r)) scaleY(0.45) scaleX(0.75); }
+          30%  { opacity:1;    transform:rotate(var(--r)) scaleY(1.1)  scaleX(1.05); }
+          65%  { opacity:0.75; transform:rotate(var(--r)) scaleY(1)    scaleX(1);    }
+          100% { opacity:0.12; transform:rotate(var(--r)) scaleY(0.45) scaleX(0.75); }
+        }
+
+        /* ── Kiwi core ── */
+        .kiwi-core {
+          position: absolute; top:50%; left:50%;
+          width:40px; height:40px; border-radius:50%;
+          transform:translate(-50%,-50%);
+          background: radial-gradient(circle at 40% 38%, #fef3c7, #fbbf24 50%, #ea580c);
+          display:flex; align-items:center; justify-content:center;
+          z-index:10;
+          animation: corePulse 1.8s ease-in-out infinite;
+        }
+        @keyframes corePulse {
+          0%,100% { transform:translate(-50%,-50%) scale(1); }
+          50%      { transform:translate(-50%,-50%) scale(1.12); }
+        }
+
+        /* ── Orbit ring ── */
+        .orbit-ring {
+          position: absolute; top:50%; left:50%;
+          width:110px; height:110px;
+          border-radius:50%;
+          border:1px dashed rgba(255,108,231,0.25);
+          transform:translate(-50%,-50%);
+          animation:orbitSpin 4s linear infinite;
+        }
+        .orbit-dot {
+          position:absolute; top:-4px; left:50%; margin-left:-4px;
+          width:8px; height:8px; border-radius:50%;
+          background:#ff6ce7;
+          box-shadow:0 0 8px #ff6ce7;
+        }
+        @keyframes orbitSpin { to { transform:translate(-50%,-50%) rotate(360deg); } }
+
+        /* ── Progress bar ── */
+        .loader-progress-wrap {
+          width: 200px;
+          display: flex; flex-direction: column; align-items: center; gap: 10px;
+        }
+        .loader-bar-track {
+          width: 100%; height: 3px; background: rgba(255,255,255,0.08);
+          border-radius: 99px; overflow: hidden;
+        }
+        .loader-bar-fill {
+          height: 100%; border-radius: 99px;
+          background: linear-gradient(90deg, #7c3aed, #ff6ce7, #f97316, #fbbf24);
+          background-size: 200% 100%;
+          animation: barGrow 5s cubic-bezier(.4,0,.2,1) forwards,
+                     barShimmer 1.2s linear infinite;
+        }
+        @keyframes barGrow {
+          0%   { width: 0%; }
+          100% { width: 100%; }
+        }
+        @keyframes barShimmer {
+          0%   { background-position: 200% center; }
+          100% { background-position: -200% center; }
+        }
+
+        /* ── Brand ── */
+        .loader-brand {
+          font-family: &#x27;Syne&#x27;, sans-serif;
+          font-size: 17px; font-weight: 800;
+          color: rgba(255,255,255,0.9);
+          letter-spacing: 0.3px;
+          animation: brandFade 0.8s ease 0.3s both;
+        }
+        .loader-brand span { color: #ff6ce7; }
+        @keyframes brandFade {
+          from { opacity:0; transform:translateY(8px); }
+          to   { opacity:1; transform:translateY(0); }
+        }
+
+        /* ── Tagline cycling ── */
+        .loader-tagline {
+          font-family: &#x27;DM Sans&#x27;, sans-serif;
+          font-size: 13px; font-weight: 500;
+          color: rgba(255,255,255,0.35);
+          letter-spacing: 0.4px;
+          min-height: 20px;
+          animation: taglineFade 0.5s ease;
+        }
+        @keyframes taglineFade {
+          from { opacity:0; transform:translateY(4px); }
+          to   { opacity:1; transform:translateY(0); }
+        }
+      </style><div class="kiwi-loader"><div class="loader-particles"><div class="lp"></div><div class="lp"></div><div class="lp"></div><div class="lp"></div><div class="lp"></div><div class="lp"></div><div class="lp"></div><div class="lp"></div></div><div class="loader-stage"><div class="petal-ring"><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="orbit-ring"><div class="orbit-dot"></div></div><div class="kiwi-core"><svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="12" fill="#fef3c7" opacity="0.85"></circle><line x1="13" y1="2" x2="13" y2="24" stroke="#92400e" stroke-width="0.6" opacity="0.45"></line><line x1="2" y1="13" x2="24" y2="13" stroke="#92400e" stroke-width="0.6" opacity="0.45"></line><line x1="4.5" y1="4.5" x2="21.5" y2="21.5" stroke="#92400e" stroke-width="0.6" opacity="0.35"></line><line x1="21.5" y1="4.5" x2="4.5" y2="21.5" stroke="#92400e" stroke-width="0.6" opacity="0.35"></line><circle cx="13" cy="13" r="3.5" fill="#fbbf24"></circle><circle cx="13" cy="5.5" r="1.4" fill="#292524"></circle><circle cx="13" cy="20.5" r="1.4" fill="#292524"></circle><circle cx="5.5" cy="13" r="1.4" fill="#292524"></circle><circle cx="20.5" cy="13" r="1.4" fill="#292524"></circle><circle cx="7.5" cy="7.5" r="1.2" fill="#292524"></circle><circle cx="18.5" cy="7.5" r="1.2" fill="#292524"></circle><circle cx="7.5" cy="18.5" r="1.2" fill="#292524"></circle><circle cx="18.5" cy="18.5" r="1.2" fill="#292524"></circle></svg></div></div><div style="text-align:center"><div class="loader-brand">Kiwi Connect <span>Digital</span></div><div class="loader-tagline" style="margin-top:6px">Building brands that grow.</div></div><div class="loader-progress-wrap"><div class="loader-bar-track"><div class="loader-bar-fill"></div></div></div></div></div><section style="background:#FAFAF7;min-height:100vh"><div style="background:linear-gradient(135deg, #8B5CF620, #fff);padding:120px 5% 80px;text-align:center"><div style="font-size:50px">🌐</div><h1 style="font-size:clamp(32px,5vw,56px);font-weight:800;margin-top:10px">Website Development</h1><p style="margin-top:12px;color:#666;font-size:16px;max-width:600px;margin-inline:auto">High-converting websites.</p></div><div style="max-width:1000px;margin:0 auto;padding:60px 5%"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&amp;q=85" style="width:100%;border-radius:20px;margin-bottom:30px"/><p style="font-size:16px;line-height:1.8;color:#555">We build responsive and conversion-focused websites.</p><div style="margin-top:40px"><h3 style="font-size:22px;margin-bottom:20px">What’s Included</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px"><div style="padding:16px;border-radius:12px;background:#fff;border:1px solid #eee;font-weight:600">✓ <!-- -->UI/UX</div><div style="padding:16px;border-radius:12px;background:#fff;border:1px solid #eee;font-weight:600">✓ <!-- -->Responsive</div><div style="padding:16px;border-radius:12px;background:#fff;border:1px solid #eee;font-weight:600">✓ <!-- -->CMS</div><div style="padding:16px;border-radius:12px;background:#fff;border:1px solid #eee;font-weight:600">✓ <!-- -->Speed Optimisation</div></div></div><div style="margin-top:60px;padding:30px;border-radius:20px;background:#111;color:#fff;text-align:center"><h3 style="font-size:22px">Ready to grow with <!-- -->Website Development<!-- -->?</h3><a href="/contact"><button style="margin-top:20px;padding:14px 28px;border-radius:100px;background:#8B5CF6;color:#fff;border:none;font-weight:700;cursor:pointer">Book Free Strategy Call →</button></a></div></div></section><script src="/_next/static/chunks/webpack-24f761952a12252f.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/css/972f5e34044b0aed.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"2:I[2846,[],\"\"]\n4:I[2972,[\"972\",\"static/chunks/972-8c737d6cac936def.js\",\"950\",\"static/chunks/app/services/%5Bid%5D/page-7e07f8b51751a086.js\"],\"\"]\n5:I[4707,[],\"\"]\n7:I[6423,[],\"\"]\n8:I[6043,[\"185\",\"static/chunks/app/layout-75e061c9d400ec8d.js\"],\"default\"]\na:I[1060,[],\"\"]\n6:[\"id\",\"web-dev\",\"d\"]\nb:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L2\",null,{\"buildId\":\"RT6Pli_pyk4BOqeCHDc1m\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"services\",\"web-dev\"],\"initialTree\":[\"\",{\"children\":[\"services\",{\"children\":[[\"id\",\"web-dev\",\"d\"],{\"children\":[\"__PAGE__?{\\\"id\\\":\\\"web-dev\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"services\",{\"children\":[[\"id\",\"web-dev\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L3\",[\"$\",\"section\",null,{\"style\":{\"background\":\"#FAFAF7\",\"minHeight\":\"100vh\"},\"children\":[[\"$\",\"div\",null,{\"style\":{\"background\":\"linear-gradient(135deg, #8B5CF620, #fff)\",\"padding\":\"120px 5% 80px\",\"textAlign\":\"center\"},\"children\":[[\"$\",\"div\",null,{\"style\":{\"fontSize\":50},\"children\":\"🌐\"}],[\"$\",\"h1\",null,{\"style\":{\"fontSize\":\"clamp(32px,5vw,56px)\",\"fontWeight\":800,\"marginTop\":10},\"children\":\"Website Development\"}],[\"$\",\"p\",null,{\"style\":{\"marginTop\":12,\"color\":\"#666\",\"fontSize\":16,\"maxWidth\":600,\"marginInline\":\"auto\"},\"children\":\"High-converting websites.\"}]]}],[\"$\",\"div\",null,{\"style\":{\"maxWidth\":1000,\"margin\":\"0 auto\",\"padding\":\"60px 5%\"},\"children\":[[\"$\",\"img\",null,{\"src\":\"https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700\u0026q=85\",\"style\":{\"width\":\"100%\",\"borderRadius\":20,\"marginBottom\":30}}],[\"$\",\"p\",null,{\"style\":{\"fontSize\":16,\"lineHeight\":1.8,\"color\":\"#555\"},\"children\":\"We build responsive and conversion-focused websites.\"}],[\"$\",\"div\",null,{\"style\":{\"marginTop\":40},\"children\":[[\"$\",\"h3\",null,{\"style\":{\"fontSize\":22,\"marginBottom\":20},\"children\":\"What’s Included\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"grid\",\"gridTemplateColumns\":\"repeat(auto-fit,minmax(220px,1fr))\",\"gap\":16},\"children\":[[\"$\",\"div\",\"0\",{\"style\":{\"padding\":16,\"borderRadius\":12,\"background\":\"#fff\",\"border\":\"1px solid #eee\",\"fontWeight\":600},\"children\":[\"✓ \",\"UI/UX\"]}],[\"$\",\"div\",\"1\",{\"style\":{\"padding\":16,\"borderRadius\":12,\"background\":\"#fff\",\"border\":\"1px solid #eee\",\"fontWeight\":600},\"children\":[\"✓ \",\"Responsive\"]}],[\"$\",\"div\",\"2\",{\"style\":{\"padding\":16,\"borderRadius\":12,\"background\":\"#fff\",\"border\":\"1px solid #eee\",\"fontWeight\":600},\"children\":[\"✓ \",\"CMS\"]}],[\"$\",\"div\",\"3\",{\"style\":{\"padding\":16,\"borderRadius\":12,\"background\":\"#fff\",\"border\":\"1px solid #eee\",\"fontWeight\":600},\"children\":[\"✓ \",\"Speed Optimisation\"]}]]}]]}],[\"$\",\"div\",null,{\"style\":{\"marginTop\":60,\"padding\":30,\"borderRadius\":20,\"background\":\"#111\",\"color\":\"#fff\",\"textAlign\":\"center\"},\"children\":[[\"$\",\"h3\",null,{\"style\":{\"fontSize\":22},\"children\":[\"Ready to grow with \",\"Website Development\",\"?\"]}],[\"$\",\"$L4\",null,{\"href\":\"/contact\",\"children\":[\"$\",\"button\",null,{\"style\":{\"marginTop\":20,\"padding\":\"14px 28px\",\"borderRadius\":100,\"background\":\"#8B5CF6\",\"color\":\"#fff\",\"border\":\"none\",\"fontWeight\":700,\"cursor\":\"pointer\"},\"children\":\"Book Free Strategy Call →\"}]}]]}]]}]]}],null],null],null]},[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"services\",\"children\",\"$6\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"services\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/972f5e34044b0aed.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_a24c97 noise\",\"children\":[[\"$\",\"$L8\",null,{}],[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]]}]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L9\"],\"globalErrorComponent\":\"$a\",\"missingSlots\":\"$Wb\"}]\n"])</script><script>self.__next_f.push([1,"9:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Kiwi Connect Digital | Digital Marketing Agency, Bhopal\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Kiwi Connect Digital - Premier digital marketing agency in Bhopal.\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}]]\n3:null\n"])</script></body></html>
